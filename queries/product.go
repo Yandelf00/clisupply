@@ -46,8 +46,8 @@ func CreateProduct() {
 		Price:         price,
 		StockQuantity: stockQuantity,
 		Suppliers:     suppliers,
-		CreatedAT:     time.Now(),
-		UpdatedAT:     time.Now(),
+		CreatedAt:     time.Now(),
+		UpdatedAt:     time.Now(),
 	}
 	database.DB.Create(&product)
 }

@@ -44,8 +44,8 @@ func AddEmployee() {
 		Role:        role,
 		PhoneNumber: phone_number,
 		Address:     address,
-		CreatedAT:   time.Now(),
-		UpdatedAT:   time.Now(),
+		CreatedAt:   time.Now(),
+		UpdatedAt:   time.Now(),
 	}
 	database.DB.Create(&employee)
 }

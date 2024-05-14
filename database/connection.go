@@ -11,7 +11,7 @@ import (
 var DB *gorm.DB
 
 func Connection() {
-	dsn := "user:password@/supply?parseTime=true"
+	dsn := "user:passowrd@/database?parseTime=true"
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		fmt.Println("there was an error in the connection")

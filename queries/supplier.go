@@ -37,13 +37,13 @@ func AddSupplier() {
 		Name:        name,
 		Email:       email,
 		PhoneNumber: phone_number,
-		ProductId:   productid,
+		ProductID:   productid,
 		Address:     address,
 		City:        city,
 		PostalCode:  postalcode,
 		Country:     country,
-		CreatedAT:   time.Now(),
-		UpdatedAT:   time.Now(),
+		CreatedAt:   time.Now(),
+		UpdatedAt:   time.Now(),
 	}
 
 	database.DB.Create(&supplier)
